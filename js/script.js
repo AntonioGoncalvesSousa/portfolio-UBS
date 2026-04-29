@@ -17,12 +17,51 @@ async function carregarEquipe() {
             <div class="info">
                 <h3>${pessoa.nome}</h3>
                 <p class="specialty"><strong>${pessoa.especialidade_desejada}</strong></p>
-                <a href="#" class="btn">Ver perfil completo ></a>
+                <a onclick="verPerfil(${pessoa.id})" class="btn">Ver perfil completo ></a>
             </div>
         `;
 
         container.appendChild(card);
     });
+}
+
+function verPerfil(id) {
+    window.location.href = `teamPage/member.html?id=${id}`;
+}
+
+function getIdFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("id");
+}
+
+async function carregarMembro() {
+    const id = getIdFromURL();
+
+    const response = await fetch("./../JSON/equipe.json");
+    const data = await response.json();
+
+    const membro = data.equipe.find(m => m.id == id);
+
+    if (!membro) return;
+
+    preencherTela(membro);
+}
+
+function preencherTela(membro) {
+    document.getElementById("imagem").src = "./../" + membro.imagem;
+    document.getElementById("nome").innerText = membro.nome;
+    document.getElementById("especialidade").innerText =
+        "Especialidade desejada: " + membro.especialidade_desejada;
+    document.getElementById("idade").innerText = membro.idade + " anos";
+
+    document.getElementById("sobre").innerText = membro.sobre;
+    document.getElementById("expectativas").innerText = membro.expectativas;
+    document.getElementById("desafios").innerText = membro.medos_e_desafios;
+    document.getElementById("motivacoes").innerText = membro.motivacoes;
+}
+
+if (window.location.pathname.includes("member.html")) {
+    carregarMembro();
 }
 
 carregarEquipe();

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@
     gap: 5px;
 }
 
-.home{
+.home {
     width: 100vw;
     height: 60vh;
     background-image: url('/css/assets/back.jpg');
@@ -114,6 +114,11 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.box h4 {
+    width: 70vw;
+    text-align: center;
 }
 
 .iconTeam {
@@ -199,3 +204,180 @@
     color: #0066cc;
 }
 
+.memberBg {
+    background-color: #f0f0f0;
+    width: 100%;
+    min-height: 100vh;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberCard {
+    width: 60vw;
+    min-height: 125vh;
+    height: auto;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+.memberColor {
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(90deg, #0066cc 0%, #00A896 100%);
+    border-radius: 40px 40px 0 0;
+}
+
+.memberInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.memberImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-top: -80px;
+}
+
+.memberContentFix {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.expectations {
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid #0066cc;
+    background-color: #0066cc20;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fixExpectation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.expectationImg img {
+    width: 50px;
+    margin: 30px;
+}
+
+
+.challenges {
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid #f97316;
+    background-color: #f9731620;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fixChallenges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+
+}
+
+.challengesImg img {
+    width: 50px;
+    margin: 30px;
+}
+
+
+.motivations {
+    margin: 20px 0;
+    width: 80%;
+    border: 1px solid #00a896;
+    background-color: #00a89620;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fixMotivations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.motivationsImg img {
+    width: 50px;
+    margin: 30px;
+}
+
+.expectations,
+.challenges,
+.motivations {
+    width: 80%;
+    min-height: 120px;
+    height: auto; /* ESSENCIAL */
+    padding: 15px;
+    align-items: flex-start; /* evita cortar texto */
+}
+
+.fixExpectation,
+.fixChallenges,
+.fixMotivations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+    height: auto; /* ESSENCIAL */
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .memberCard {
+        width: 90vw;
+    }
+
+    .expectations,
+    .challenges,
+    .motivations {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expectationImg img,
+    .challengesImg img,
+    .motivationsImg img {
+        margin: 10px;
+    }
+
+    .navFix {
+        width: 100%;
+    }
+}

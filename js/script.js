@@ -1,5 +1,5 @@
 async function carregarEquipe() {
-    const response = await fetch('../JSON/equipe.json');
+    const response = await fetch('./JSON/equipe.json');
     const data = await response.json();
 
     const container = document.getElementById('teamContainer');
@@ -37,7 +37,7 @@ function getIdFromURL() {
 async function carregarMembro() {
     const id = getIdFromURL();
 
-    const response = await fetch('../JSON/equipe.json');
+    const response = await fetch('./../JSON/equipe.json');
     const data = await response.json();
 
     const membro = data.equipe.find(m => m.id == id);

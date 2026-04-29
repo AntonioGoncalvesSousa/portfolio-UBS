@@ -53,11 +53,11 @@ body {
 .home {
     width: 100vw;
     height: 60vh;
-    background-image: url('css/assets/back.jpg');
+    background-image: url('assets/back.jpg');
     background-size: cover;
     background-position: center;
 }
-memberInfo
+
 .bg {
     background-color: #0066ccb3;
     width: 100%;

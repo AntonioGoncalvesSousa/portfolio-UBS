@@ -28,7 +28,7 @@
             "nome": "Antonio Gonçalves Sousa",
             "especialidade_desejada": "Anestesista",
             "data_nascimento": "26/08/2005",
-            "sobre": "Olá, meu nome é Antonio, sou estudante de medicina do primeiro período.",
+            "sobre": "Olá, meu nome é Antonio, sou estudante de Medicina formado em Analise e Desenvolvimento de Sistemas.",
             "expectativas": "Aprender a prática da medicina, ter contato direto com o paciente e aprender com profissionais formados e bem preparados para qualquer tipo de situação adversa. Acredito que a medicina não se aprende de forma teórica, mas sim de forma prática, observando e tentando reproduzir ações médicas da melhor forma, e que não há forma melhor de aprender do que na UBS.",
             "medos_e_desafios": "Desafios em relação a iniciar o estudo da medicina já com aprendizado na prática, embora veja isso como algo que trará benefícios futuros.",
             "motivacoes": "Possibilidade de aumentar o conhecimento e futuramente ser capaz de salvar vidas pela prática da medicina."
@@ -54,6 +54,17 @@
             "expectativas": "Desenvolver uma comunicação mais humana, aprender a lidar com diferentes realidades e entender melhor como funciona o cuidado dentro da atenção básica e do SUS. Também espero aprender mais com os pacientes e com a convivência com a equipe de saúde.",
             "medos_e_desafios": "Lidar com a insegurança do primeiro contato mais próximo com pacientes, aprender a aplicar a teoria na prática e desenvolver mais confiança dentro do ambiente da saúde.",
             "motivacoes": "Vejo essa etapa como uma oportunidade importante de crescimento pessoal e profissional, além de contribuir para a construção da minha identidade como futuro médico."
+        },
+        {
+            "id": 6,
+            "imagem": "css/assets/denilson.jpeg",
+            "nome": "Denilson Soares",
+            "especialidade_desejada": "Ainda não definida",
+            "data_nascimento": "?",
+            "sobre": "Vejo a experiência no SUS como um ponto chave para desenvolver a integração entre teoria e prática, além de fortalecer valores como convivência, educação e ética na formação como cidadão e profissional.",
+            "expectativas": "Aprender a vivenciar na prática a relação médico-paciente, compreendendo melhor cada indivíduo em sua realidade cotidiana e proporcionando uma experiência de cuidado mais humanizada.",
+            "medos_e_desafios": "Desafio de equilibrar teoria e prática e de conseguir compreender profundamente as necessidades individuais de cada paciente em seu contexto de vida.",
+            "motivacoes": "Desenvolver uma visão mais humanizada da medicina, focando não apenas nos sintomas, mas na pessoa como um todo, buscando entender causas e fatores que influenciam sua saúde."
         }
     ]
 }

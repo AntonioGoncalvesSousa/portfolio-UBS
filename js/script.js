@@ -52,7 +52,10 @@ function preencherTela(membro) {
     document.getElementById("nome").innerText = membro.nome;
     document.getElementById("especialidade").innerText =
         "Especialidade desejada: " + membro.especialidade_desejada;
-    document.getElementById("idade").innerText = membro.idade + " anos";
+
+    const idade = calcularIdade(membro.data_nascimento);
+    document.getElementById("idade").innerText =
+        idade === "?" ? "Idade: ?" : idade + " anos";
 
     document.getElementById("sobre").innerText = membro.sobre;
     document.getElementById("expectativas").innerText = membro.expectativas;
@@ -62,6 +65,28 @@ function preencherTela(membro) {
 
 if (window.location.pathname.includes("member.html")) {
     carregarMembro();
+}
+
+function calcularIdade(dataNascimento) {
+    if (!dataNascimento || dataNascimento === "?") return "?";
+
+    const [dia, mes, ano] = dataNascimento.split("/");
+    const hoje = new Date();
+    const nascimento = new Date(ano, mes - 1, dia);
+
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+    const mesAtual = hoje.getMonth();
+    const diaAtual = hoje.getDate();
+
+    if (
+        mesAtual < nascimento.getMonth() ||
+        (mesAtual === nascimento.getMonth() && diaAtual < nascimento.getDate())
+    ) {
+        idade--;
+    }
+
+    return idade;
 }
 
 carregarEquipe();

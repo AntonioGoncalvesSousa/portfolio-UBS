@@ -198,6 +198,7 @@ body {
 .btn {
     text-decoration: none;
     color: #00A896;
+    cursor: pointer;
 }
 
 .specialty {

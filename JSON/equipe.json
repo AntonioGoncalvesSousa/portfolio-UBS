@@ -47,13 +47,13 @@
         {
             "id": 5,
             "imagem": "css/assets/anderson.jpeg",
-            "nome": "Anderson",
-            "especialidade_desejada": "Ainda não definida",
-            "data_nascimento": "?",
-            "sobre": "Olá, sou Anderson e vejo a experiência na UBS como uma oportunidade de sair da teoria e compreender de forma mais próxima a realidade da saúde pública e das pessoas atendidas pelo SUS.",
-            "expectativas": "Desenvolver uma comunicação mais humana, aprender a lidar com diferentes contextos sociais, compreender como fatores econômicos, emocionais e familiares influenciam o processo saúde-doença e aprender mais sobre o funcionamento da atenção básica, o trabalho em equipe multiprofissional e o papel do médico dentro da comunidade.",
-            "medos_e_desafios": "Inseguranças e dúvidas relacionadas à responsabilidade do cuidado, ao primeiro contato mais próximo com pacientes e ao desafio de aplicar os conhecimentos teóricos na prática.",
-            "motivacoes": "Enxerga essa etapa como uma oportunidade importante de crescimento, amadurecimento e construção da identidade profissional como futuro médico."
+            "nome": "Anderson Zanata",
+            "especialidade_desejada": "Cardiologista",
+            "data_nascimento": "26/08/2005",
+            "sobre": "Prazer, futuro Dr. Anderson Zanata. Vejo a experiência na UBS como uma oportunidade de sair da teoria e compreender mais de perto a realidade da saúde pública, dos pacientes e dos desafios enfrentados diariamente dentro do SUS.",
+            "expectativas": "Desenvolver uma comunicação mais humana, aprender a lidar com diferentes realidades e entender melhor como funciona o cuidado dentro da atenção básica e do SUS. Também espero aprender mais com os pacientes e com a convivência com a equipe de saúde.",
+            "medos_e_desafios": "Lidar com a insegurança do primeiro contato mais próximo com pacientes, aprender a aplicar a teoria na prática e desenvolver mais confiança dentro do ambiente da saúde.",
+            "motivacoes": "Vejo essa etapa como uma oportunidade importante de crescimento pessoal e profissional, além de contribuir para a construção da minha identidade como futuro médico."
         }
     ]
 }

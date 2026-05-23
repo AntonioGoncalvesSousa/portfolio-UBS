@@ -384,3 +384,27 @@ p {
         width: 100%;
     }
 }
+
+.relatosCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.relatoBtn {
+    text-decoration: none;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.relatoBtn:hover {
+    background-color: #0052a3;
+    transform: scale(1.03);
+}
